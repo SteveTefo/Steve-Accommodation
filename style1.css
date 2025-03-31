@@ -1,29 +1,23 @@
+/* General styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    padding: 1rem;
     text-align: center;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2rem;
-}
-
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+    list-style: none;
     display: flex;
     justify-content: center;
-    background-color: #333;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -31,51 +25,62 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    padding: 10px 15px;
-    display: block;
 }
 
-nav ul li a:hover {
-    background-color: #4CAF50;
+main {
+    padding: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+.room {
+    text-align: center;
+}
+
+.room img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Footer styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
 }
 
 .contact-options {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
     justify-content: center;
-    padding: 20px;
+    gap: 15px;
 }
 
 .contact-item {
     text-align: center;
-    width: 150px;
-    padding: 10px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    max-width: 150px;
 }
 
 .contact-item i {
-    font-size: 30px;
-    margin-bottom: 10px;
+    font-size: 2rem;
     display: block;
+    margin-bottom: 0.5rem;
 }
 
-.contact-item p {
-    margin: 0;
-}
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
 
-.contact-item a {
-    text-decoration: none;
-    color: #333;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
+    .contact-options {
+        flex-direction: column;
+    }
 }
